@@ -1,6 +1,7 @@
 include Item
 #This is a interface for all weapons. It contains the methods every weapon
 #will need. It is a subclass of Item.
+#Class written by Bill Clark
 class Weapon < Item
 	attr_accessor :name,uses,worth,iconID,owner,rank,mt,hit,crit,range,effective
 	

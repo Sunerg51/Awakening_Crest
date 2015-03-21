@@ -1,4 +1,5 @@
-#A Interface for all items in the game. Every item inherits from here.
+#A Interface for all items in the game. Every item inherits from here.\
+#Class Written by Bill Clark
 class Item 
 	attr_accessor :name,uses,worth,iconID,owner
 	
