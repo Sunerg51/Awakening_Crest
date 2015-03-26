@@ -1,7 +1,7 @@
 #A Interface for all items in the game. Every item inherits from here.\
 #Class Written by Bill Clark
 class Item 
-	attr_accessor :name,uses,worth,iconID,owner
+	attr_accessor :name,:uses,:worth,:iconID,:owner
 	
 	#Initializes properities of an item. 
 	def initialize(uses, worth, name, iconID)
@@ -9,8 +9,8 @@ class Item
 		@worth = worth
 		@name = name
 		@iconID = iconID
-		@owner - ""
-	
+		@owner = ""
+	end
 	#If this item does something when the use option is selected, this will
 	#do that. Takes a unit as items tend to affect the unit using it.
 	def action(unit)

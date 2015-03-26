@@ -1,21 +1,17 @@
 require_relative 'Item'
-#This is a interface for all weapons. It contains the methods every weapon
-#will need. It is a subclass of Item.
+#This is a interface for staves. It contains the methods a staff needs to function with
+#the rest of the code. It is a subclass of Item.
 #Class written by Bill Clark
 class Weapon < Item
-	attr_accessor :name,:uses,:worth,:iconID,:owner,:rank,:mt,:hit,:crit,:range,:effective
+	attr_accessor :name,:uses,:worth,:iconID,:owner,:rank,:range
 	
 	#Creates the properties of a weapon. Used to create any new weapon object.
 	#Type may seem like it is missing, but do remember this is an interface. Type is
 	#Dictated by the class. This allows for new types of weapons to be created.
-	def initialize(rank, mt, hit, crit, range, effective, uses, worth, name, iconID)
+	def initialize(rank, range, uses, worth, name, iconID)
 		super(uses, worth, name, iconID)
 		@rank = rank
-		@mt = mt
-		@hit = hit
-		@crit = crit
 		@range = range
-		@effective = effective
 	end
 	#Instructions to be run when a weapon is set to a unit's equipped slot. 
 	def on_equip(unit)
