@@ -1,4 +1,6 @@
 require_relative 'Weapon'
+require_relative 'Lance'
+require_relative 'Sword'
 #This is the interface for axe weapons. This specifies everything those
 #weapons will need.
 #Class written by Bill Clark

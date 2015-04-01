@@ -2,7 +2,7 @@ require_relative 'Item'
 #This is a interface for staves. It contains the methods a staff needs to function with
 #the rest of the code. It is a subclass of Item.
 #Class written by Bill Clark
-class Weapon < Item
+class Staff < Item
 	attr_accessor :name,:uses,:worth,:iconID,:owner,:rank,:range
 	
 	#Creates the properties of a weapon. Used to create any new weapon object.

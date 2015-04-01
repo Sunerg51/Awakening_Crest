@@ -1,7 +1,7 @@
 require_relative 'Weapon'
 #This is the interface for bow weapons. This specifies everything those
 #weapons will need.#Class written by Bill Clark
-class Weapon < Weapon
+class Bow < Weapon
 	attr_accessor :name,:uses,:worth,:iconID,:owner,:rank,:mt,:hit,:crit,:range,:effective
 	
 	#Creates the properties of a weapon. Used to create any new weapon object.
