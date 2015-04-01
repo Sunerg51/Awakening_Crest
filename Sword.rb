@@ -41,7 +41,11 @@ class Sword < Weapon
 		#weapon.is_a?(Axe) ? ret = 1 : ret = 0
 		#weapon.is_a?(Lance) ? ret = -1 : ret = 0
 		if weapon.is_a?(Lance)
+			return-1
+		elsif weapon.is_a?(Axe)
 			return 1
+		else
+			return 0
 		end
 	end
 end

@@ -1,4 +1,6 @@
 require_relative 'Weapon'
+require_relative 'Sword'
+require_relative 'Axe'
 #This is the interface for lance weapons. This specifies everything those
 #weapons will need.
 #Class written by Bill Clark
@@ -32,5 +34,18 @@ class Lance < Weapon
 	#Returns the stat (magic or strength) to be used in the combat calculator when attacking
 	#with this weapon. Allows for modularity and follows the logic of a sword knowing it's a sword.
 	def relevantstat?()
+	end
+	
+	def triangle?(weapon)
+		#ret = 0
+		#weapon.is_a?(Axe) ? ret = 1 : ret = 0
+		#weapon.is_a?(Lance) ? ret = -1 : ret = 0
+		if weapon.is_a?(Axe)
+			return-1
+		elsif weapon.is_a?(Sword)
+			return 1
+		else
+			return 0
+		end
 	end
 end
